@@ -9,9 +9,12 @@ public class HalloJavamitForEach {
         stringList.add("Wort3");
         stringList.add("Wort4");
         stringList.add("MoneyBoy");
-        System.out.println("Ausgabe mit For-Each Schleife");
+        System.out.println("Ausgabe mit forEach-Schleife");
         for(String s: stringList){
             System.out.println(s);
         }
+        System.out.println();
+        System.out.println("Ausgabe mit forEach-Methode");
+        stringList.forEach((String s) -> System.out.println(s));
     }
 }
